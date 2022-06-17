@@ -1,0 +1,144 @@
+.discover {
+    margin-top: 300px;
+    position: relative;
+    #story_object02 {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #story_object01 {
+        position: absolute;
+        left: 0;
+        bottom: 50vh;
+    }
+    .discover-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+        .discover-intro {
+            width: 45%;
+            text-align: center;
+            h2 {
+                font-family: 'Cookie', cursive;
+                font-size: 50px;
+                font-weight: 500;
+            }
+            h3 {
+                display: inline;
+                color: #bc906b;
+                font-size: 50px;
+                font-weight: 500;
+            }
+            p {
+                font-family: 'ZCOOL XiaoWei', serif;
+                font-size: 17px;
+                margin-top: 30px;
+                color: #666666;
+                line-height: 22px;
+            }
+            .number {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 60px;
+                span {
+                    h2 {
+                        font-size: 40px;
+                        color: #666666;
+                    }
+                    h3 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+       .imageWrapper {
+           width: 45%;
+           overflow: hidden;
+           position: relative;
+           transition: all 2s ease;
+            img {
+                width: 100%;
+                height: 60vh;
+                transition: all 0.5s ease;
+            }
+
+            img:hover {
+                transform: scale(1.1);
+            }
+       }
+
+       .imageWrapper::before {
+           content: '';
+           position: absolute;
+           width: 30%;
+           height: 100%;
+           top: 0px;
+           left: -50%;
+           z-index: 100;
+           background-color: rgba(white , 0.7);
+       }
+
+       .imageWrapper:hover::before{
+            transition: all 1.2s ease;
+            left: 150%;
+       }
+    }
+    .get-offer {
+        margin-top: 50px;
+        background-image: url('../../../../img/cta_image-min.jpg');
+        height: 50vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #000;
+            opacity: 0.3;
+        }
+        .get-offer-content {
+            position: absolute;
+            display: flex;
+            width: 1000px;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 0;
+            right: 0;
+            span {
+                color: #fff;
+                h2 {
+                    font-family: 'Cookie', cursive;
+                    font-size: 47px;
+                    font-weight: 500;
+                    opacity: 0.4;
+                }
+                h3 {
+                    font-size: 30px;
+                }
+            }
+
+            button {
+                width: 180px;
+                height: 60px;
+                font-size: 15px;
+                font-weight: 700;
+                background-color: #bc906b;
+                color: #fff;
+                font-family: sans-serif;
+            }
+
+            button:hover {
+                cursor: pointer;
+                background-color: #000;
+            }
+        }
+    }
+}

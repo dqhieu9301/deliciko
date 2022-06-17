@@ -1,0 +1,143 @@
+.header {
+    scroll-behavior: smooth;
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        .container-logo {
+            border: 1px solid rgb(248, 245, 245);
+            img {
+                width: 110px;
+                height: 95px;
+            }
+        }
+
+        .nav-bar {
+            ul {
+                list-style: none;
+                li {
+                    display: inline-block;
+                    padding: 0px 30px;
+                    a {
+                        font-family: sans-serif;
+                        line-height: 95px;
+                        color: #2c2c2c;
+                        font-weight: 700;
+                        font-size: 15px;
+                    }
+
+                    a:hover {
+                        color: #bc906b;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cart-logo {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 998;
+    background-color: #c70e40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #fff;
+    right: 20px;
+    bottom: 20px;
+    .amout-products {
+        position: absolute;
+        top: -10px;
+        right: -5px;
+        width: 20px;
+        height: 20px;
+        background-color: #c70e40;
+        border-radius: 50%;
+        text-align: center;
+    }
+}
+.cart-logo:hover {
+    cursor: pointer;
+}
+.scroll-up {
+    position: fixed;
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    background-color: #bc906b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 80px;
+    transition: all 0.5s ease;
+    a {
+        i {
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+}
+
+.scroll-up:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cart {
+    position: fixed;
+    z-index: 99999;
+    height: 100vh;
+    width: 30vw;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0 3px 1px rgb(189, 189, 189);
+    transition: all 0.5s ease;
+    .fa-xmark {
+        color: red;
+        font-size: 30px;
+        padding: 5px 13px;
+        border-radius: 50%;
+        border: 1px solid red;
+        margin-top: 20px;
+        float: right;
+    }
+    .fa-xmark:hover {
+        cursor: pointer;
+        border: none;
+        background-color: #c70e40;
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+    .cart-product-infor {
+        margin: 0 auto;
+        margin-top: 100px;
+        height: 70%;
+        width: 90%;
+        h4 {
+            color: #2c2c2c;
+            font-size: 25px;
+        }
+        .cart-product-main {
+            scrollbar-color: red;
+            overflow-y: auto;
+            max-height: 100%;
+            width: 100%;
+        }
+        span {
+            padding: 15px 10px;
+            background-color: #F9F9F9;
+            display: block;
+            margin-top: 15px;
+            font-size: 18px;
+            color: #000;
+            font-weight: 700;
+        }
+    }
+}

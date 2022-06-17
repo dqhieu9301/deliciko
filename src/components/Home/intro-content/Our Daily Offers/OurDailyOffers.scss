@@ -1,0 +1,156 @@
+.our-daily-offers {
+    margin-top: 50px;
+    padding-bottom: 80px;
+    position: relative;
+    h2 {
+        text-align: center;
+        font-family: 'Cookie', cursive;
+        color: #000;
+        font-size: 50px;
+        font-weight: 500;
+    }
+    h3 {
+        text-align: center;
+        display: inline;
+        color: #bc906b;
+        font-size: 50px;
+        font-weight: 500;
+    }
+    .pattern {
+        display: flex;
+        justify-content: center;
+    }
+    #daily_offer_object01 {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    #daily_offer_object02 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .offers-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .offers-menu {
+            overflow: hidden;
+            position: relative;
+            img {
+                height: 420px;
+                transition: all 0.5s ease;
+            }
+            img:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+            }
+       }
+       .offers-menu::before {
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        top: 0px;
+        left: -50%;
+        z-index: 100;
+        background-color: rgba(white , 0.7);
+        }
+
+        .offers-menu:hover::before{
+            transition: all 1.2s ease;
+            left: 150%;
+        }
+        .offers-items {
+            height: 420px;
+            .offers-item {
+                height: 30%;
+                display: flex;
+                margin-top: 10px;
+                .offers-item-image{
+                    overflow: hidden;
+                    position: relative;
+                    img {
+                        height: 100%;
+                        transition: all 1.2s ease;
+                    }
+
+                    img:hover {
+                        transform: scale(1.1);
+                    }
+                }
+                .offers-item-image::before {
+                    content: '';
+                    position: absolute;
+                    width: 30%;
+                    height: 100%;
+                    top: 0px;
+                    left: -50%;
+                    z-index: 100;
+                    background-color: rgba(white , 0.7);
+                    
+                    }
+            
+                    .offers-item-image:hover::before{
+                        transition: all 1.2s ease;
+                        left: 150%;
+                    }
+                .item-content {
+                    margin-left: 30px;
+                    h3 {
+                        display: inline;
+                        font-family: 'ZCOOL XiaoWei', serif;
+                        font-size: 28px;
+                        font-weight: 500;
+                        position: relative;
+                    }
+                    h4 {
+                        display: inline;
+                        font-family: 'ZCOOL XiaoWei', serif;
+                        color: #bc906b;
+                        font-size: 25px;
+                        font-weight: 500;
+                        float: right;
+                    }
+                    p {
+                        margin-top: 20px;
+                        font-size: 17px;
+                        color: #666666;
+                    }
+                }
+
+                #spicy {
+                    h3::before {
+                        position: absolute;
+                        content: '';
+                        border: 1px dashed #000;
+                        width: 190%;
+                        top: 17px;
+                        left: 140px;
+                    }
+                }
+                #almond {
+                    h3::before {
+                        position: absolute;
+                        content: '';
+                        border: 1px dashed #000;
+                        width: 60%;
+                        top: 17px;
+                        left: 240px;
+                    }
+                }
+                #Tuscan {
+                    h3::before {
+                        position: absolute;
+                        content: '';
+                        border: 1px dashed #000;
+                        width: 80%;
+                        top: 17px;
+                        left: 220px;
+                    }
+                }
+            }
+        }
+    }
+}

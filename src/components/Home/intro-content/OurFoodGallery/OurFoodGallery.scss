@@ -1,0 +1,81 @@
+.our-food-gallery {
+    margin-top: 100px;
+    h2 {
+        text-align: center;
+        font-family: 'Cookie', cursive;
+        color: #000;
+        font-size: 50px;
+        font-weight: 500;
+    }
+    h3 {
+        text-align: center;
+        display: inline;
+        color: #bc906b;
+        font-size: 50px;
+        font-weight: 500;
+    }
+    .pattern {
+        display: flex;
+        justify-content: center;
+    }
+    .our-food-gallery-wrapper {
+        margin-top: 50px;
+        .our-food-gallery-image {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            #item1 {
+                width: 49.5%;
+                margin-left: 2px;
+            }
+            #item2 {
+                width: 24.7%;
+            }
+            #item3 {
+                width: 24.7%;
+                margin-right: 2px;
+            }
+            #item4 {
+                width: 24.7%;
+                margin-left: 2px;
+            }
+            #item5 {
+                width: 24.7%;
+            }
+            #item6 {
+                width: 49.5%;
+                margin-right: 2px;
+            }
+            #item1 , #item2 , #item3 , #item4 , #item5,
+            #item6 {
+                img {
+                    transition: all 0.5s ease;
+                    width: 100%;
+                }
+                img:hover {
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
+            }
+            .item-wrapper {
+                overflow: hidden;
+                position: relative;
+            }
+            .item-wrapper::before {
+                content: '';
+                position: absolute;
+                width: 30%;
+                height: 100%;
+                top: 0px;
+                left: -50%;
+                z-index: 100;
+                background-color: rgba(white , 0.7);
+                }
+        
+            .item-wrapper:hover::before{
+                transition: all 1.2s ease;
+                left: 150%;
+            }
+        }
+    }
+}

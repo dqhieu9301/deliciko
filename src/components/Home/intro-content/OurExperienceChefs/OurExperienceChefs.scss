@@ -1,0 +1,102 @@
+.our-experience-chefs {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    position: relative;
+    #team-object2 {
+        position: absolute;
+        top: 0;
+    }
+    h2 {
+        text-align: center;
+        font-family: 'Cookie', cursive;
+        color: #000;
+        font-size: 50px;
+        font-weight: 500;
+    }
+    h3 {
+        text-align: center;
+        display: inline;
+        color: #bc906b;
+        font-size: 50px;
+        font-weight: 500;
+    }
+    .pattern {
+        display: flex;
+        justify-content: center;
+    }
+    .image-chef-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 100;
+        .image-chef-item {
+            width: 30%;
+            overflow: hidden;
+            position: relative;
+            img {
+                width: 100%;
+                transition: all 0.5s ease;
+            }
+            img:hover {
+                transform: scale(1.1);
+            }
+            .chef-information {
+                position: absolute;
+                width: 70%;
+                background-color: rgba(44, 44, 44, 0.9);
+                bottom: -50%;
+                z-index: 101;
+                transition: all 1s ease;
+                h4 {
+                    margin-top: 30px;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+                p {
+                    margin-top: 10px;
+                    color: #c3bdbd;
+                    text-align: center;
+                }
+                .chef-contact {
+                    width: 50%;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    padding-bottom: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    i {
+                        color: #fff;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .image-chef-item::before {
+            content: '';
+            position: absolute;
+            width: 30%;
+            height: 100%;
+            top: 0px;
+            left: -50%;
+            z-index: 100;
+            background-color: rgba(white , 0.7);
+            }
+    
+        .image-chef-item:hover::before{
+            transition: all 1s ease;
+            left: 100%;
+        }
+        .image-chef-item:hover .chef-information{
+            bottom: 0;
+        }
+    }
+    #team-object1 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
