@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "gh-pages": "^4.0.0",
+    "hash-router": "^0.4.0",
     "node-sass": "^7.0.1",
     "react": "^18.1.0",
     "react-animated-numbers": "^0.11.0",
