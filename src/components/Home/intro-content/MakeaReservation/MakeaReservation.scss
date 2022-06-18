@@ -105,8 +105,12 @@
 
 @media (max-width:740px) {
     .make-a-reservation {
-        height: 100vh;
+        height: 130vh;
         .make-a-reservation-container {
+            h2 , 
+            h3 {
+                font-size: 35px;
+            }
             .make-a-reservation-main {
                 max-width: none;
                 margin: 0 auto;
@@ -117,7 +121,7 @@
     
                 .form {
                     width: 90%;
-                    height: 550px;
+                    height: 80vh;
                     margin: 0 auto;
                     form {
                         margin: 0 auto;
@@ -126,32 +130,32 @@
                             display: block;
                             text-align: center;
                             color: #000;
-                            font-size: 25px;
+                            font-size: 18px;
                             font-weight: 500;
                         }
                         input {
                             display: inline-block;
                             margin: 0 auto;
                             margin-top: 20px;
-                            width: 80%;
-                            height: 50px;
-                            padding: 0px 20px;
+                            width: 85%;
+                            height: 40px;
+                            padding: 0px 5px;
                             color: #666666;
                             outline: none;
                         }
                         select {
-                            width: 80%;
-                            height: 50px;
+                            width: 85%;
+                            height: 40px;
                             margin-top: 20px;
-                            padding: 0px 20px;
+                            padding: 0px 5px;
                             color: #666666;
                         }
                         button {
-                            width: 80%;
-                            height: 50px;
+                            width: 85%;
+                            height: 40px;
                             margin-top: 20px;
                             padding: 0px 20px;
-                            font-size: 15px;
+                            font-size: 12px;
                             font-weight: 700;
                             color: #fff;
                             background-color: #bc906b;

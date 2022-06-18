@@ -198,27 +198,29 @@
         .slider-main { 
             margin-bottom: 40px;
             #item-one {
-                padding-top: 110%;
+                padding-top: 130%;
             }
             #item-two {
-                padding-top: 110%;
+                padding-top: 130%;
             }
             #item-three {
-                padding-top: 110%;
+                padding-top: 130%;
             }
     
             .slider-item {
                 position: relative;
                 .item-content {
+                    width: 90%;
                     h2 {
-                        font-size: 30px;
+                        font-size: 26px;
                     }
                     h1 {
-                        font-size: 65px;
+                        font-size: 40px;
                     }
                     span {
                         p {
-                            letter-spacing: 3px;
+                            font-size: 10px;
+                            letter-spacing: 2px;
                         }
                     }
                     span::before {
@@ -227,7 +229,11 @@
                     span::after {
                         display: none;
                     }
+                    .view-menu {
+                        width: 50%;
+                    }
                 }
+                
             }
         }
         .intro-cotnent {
@@ -249,7 +255,7 @@
                 }
                 h3 {
                     font-family: 'ZCOOL XiaoWei', serif;
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: 500;
                     display: inline-block;
                     color: #9a9696;
@@ -263,7 +269,7 @@
                     }
                 }
                 p {
-                    font-size: 17px;
+                    font-size: 15px;
                     font-family: 'ZCOOL XiaoWei', serif;
                     color: #9a9696;
                     width: 80%;

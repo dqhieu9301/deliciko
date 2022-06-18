@@ -182,19 +182,37 @@
                 width: 80%;
                 margin: 0 auto;
                 text-align: center;
+                h2 {
+                    font-family: 'Cookie', cursive;
+                    font-size: 35px;
+                    font-weight: 500;
+                }
+                h3 {
+                    display: inline;
+                    color: #bc906b;
+                    font-size: 35px;
+                    font-weight: 500;
+                }
+                p {
+                    font-size: 15px;
+                    width: 95%;
+                    margin: 10px auto;
+                }
                 .number {
+                    margin-top: 30px;
+                    width: 100%;
                     span {
                         h2 {
-                            font-size: 35px;
+                            font-size: 28px;
                         }
                         h3 {
-                            font-size: 25px;
+                            font-size: 18px;
                         }
                     }
                 }
             }
            .imageWrapper {
-               width: 80%;
+               width: 90%;
                margin: 50px auto;
            }
         }
@@ -205,7 +223,7 @@
             .get-offer-content {
                 display: inherit;
                 width: 100%;
-                transform: translateY(25%);
+                transform: translateY(20%);
                 span {
                     margin: 0 auto;
                     width: 80%;
@@ -214,7 +232,7 @@
                     text-align: center;
                     h2 {
                         font-family: 'Cookie', cursive;
-                        font-size: 47px;
+                        font-size: 35px;
                         font-weight: 500;
                         opacity: 0.4;
                         color: #666666;
@@ -223,14 +241,14 @@
                         display: block;
                         margin-top: 15px;
                         margin-bottom: 15px;
-                        font-size: 30px;
+                        font-size: 25px;
                         color: #fff;
                     }
                 }
     
                 button {
-                    width: 160px;
-                    height: 50px;
+                    width: 130px;
+                    height: 40px;
                     display: block;
                     margin: 0 auto;
                 }

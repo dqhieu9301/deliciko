@@ -157,6 +157,12 @@
 
 @media (max-width:740px) {
     .our-daily-offers {
+        h2 {
+            font-size: 35px;
+        }
+        h3 {
+            font-size: 35px;
+        }
         .offers-container {
             max-width: none;
             display: inherit;
@@ -165,6 +171,7 @@
                 margin: 0 auto;
                 img {
                     width: 100%;
+                    height: 40vh;
                 }
            }
             .offers-items {

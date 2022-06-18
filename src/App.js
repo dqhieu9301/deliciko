@@ -10,12 +10,13 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  HashRouter,
 } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Header />
         <Routes>
@@ -39,7 +40,7 @@ function App() {
         draggable
         pauseOnHover
       />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
