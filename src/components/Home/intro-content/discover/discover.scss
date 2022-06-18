@@ -126,6 +126,7 @@
             }
 
             button {
+                position: relative;
                 width: 180px;
                 height: 60px;
                 font-size: 15px;
@@ -133,11 +134,111 @@
                 background-color: #bc906b;
                 color: #fff;
                 font-family: sans-serif;
+                transition: all 0.5s ease;
+                border: none;
+            }
+            button::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 5px;
+                background-color: #bc906b;
+                opacity: 0.4;
+                bottom: -5px;
+                left: 5px;
+            }
+            button::after {
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 100%;
+                background-color: #bc906b;
+                opacity: 0.4;
+                top: 2px;
+                right: -5px;
+            }
+            button:hover::after {
+                display: none;
+            }
+            button:hover::before {
+                display: none;
             }
 
             button:hover {
                 cursor: pointer;
                 background-color: #000;
+            }
+        }
+    }
+}
+
+@media (max-width:740px) {
+    .discover {
+        margin-top: 70px;
+        .discover-container {
+        display: inherit;
+        max-width: none;
+            .discover-intro {
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+                .number {
+                    span {
+                        h2 {
+                            font-size: 35px;
+                        }
+                        h3 {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+           .imageWrapper {
+               width: 80%;
+               margin: 50px auto;
+           }
+        }
+        .get-offer {
+            margin-top: 50px;
+            height: 70vh;
+            background-size: cover;
+            .get-offer-content {
+                display: inherit;
+                width: 100%;
+                transform: translateY(25%);
+                span {
+                    margin: 0 auto;
+                    width: 80%;
+                    display: block;
+                    color: #fff;
+                    text-align: center;
+                    h2 {
+                        font-family: 'Cookie', cursive;
+                        font-size: 47px;
+                        font-weight: 500;
+                        opacity: 0.4;
+                        color: #666666;
+                    }
+                    h3 {
+                        display: block;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        font-size: 30px;
+                        color: #fff;
+                    }
+                }
+    
+                button {
+                    width: 160px;
+                    height: 50px;
+                    display: block;
+                    margin: 0 auto;
+                }
+    
+                button:hover {
+                    cursor: pointer;
+                    background-color: #000;
+                }
             }
         }
     }

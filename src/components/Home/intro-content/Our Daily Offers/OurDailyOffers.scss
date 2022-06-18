@@ -154,3 +154,78 @@
         }
     }
 }
+
+@media (max-width:740px) {
+    .our-daily-offers {
+        .offers-container {
+            max-width: none;
+            display: inherit;
+            .offers-menu {
+                width: 90%;
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                }
+           }
+            .offers-items {
+                height: 420px;
+                .offers-item {
+                    width: 90%;
+                    height: 30%;
+                    display: flex;
+                    margin: 5px auto;
+                    .offers-item-image{
+                        overflow: hidden;
+                        position: relative;
+                        width: 40%;
+                        img {
+                            width: 70%;
+                            height: 50%;
+                            transition: all 1.2s ease;
+                        }
+                    }
+                    .item-content {
+                        margin-left: 0px;
+                        h3 {
+                            display: inline;
+                            font-family: 'ZCOOL XiaoWei', serif;
+                            font-size: 23px;
+                            font-weight: 500;
+                            position: relative;
+                        }
+                        h4 {
+                            display: inline;
+                            font-family: 'ZCOOL XiaoWei', serif;
+                            color: #bc906b;
+                            font-size: 25px;
+                            font-weight: 500;
+                            float: right;
+                        }
+                        p {
+                            margin-top: 20px;
+                            font-size: 17px;
+                            color: #666666;
+                        }
+                    }
+    
+                    #spicy {
+                        h3::before {
+                            display: none;
+                        }
+                    }
+                    #almond {
+                        h3::before {
+                            display: none;
+                        }
+                    }
+                    #Tuscan {
+                        h3::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

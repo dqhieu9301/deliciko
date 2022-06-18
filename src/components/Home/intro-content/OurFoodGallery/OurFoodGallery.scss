@@ -79,3 +79,39 @@
         }
     }
 }
+
+@media (max-width:740px) {
+    .our-food-gallery {
+        margin-top: 60px;
+        .our-food-gallery-wrapper {
+            margin-top: 40px;
+            .our-food-gallery-image {
+                display: inherit;
+                width: 100%;
+                justify-content: space-between;
+                #item1 {
+                    width: 100%;
+                    margin-left: 0px;
+                }
+                #item2 {
+                    width: 100%;
+                }
+                #item3 {
+                    width: 100%;
+                    margin-right: 0px;
+                }
+                #item4 {
+                    width: 100%;
+                    margin-left: 0px;
+                }
+                #item5 {
+                    width: 100%;
+                }
+                #item6 {
+                    width: 100%;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}

@@ -59,10 +59,16 @@ const Discover = () => {
                 <div className='overlay'></div>
                 <div className='get-offer-content'>
                     <span>
-                        <h2>Celebrate at one of NY’s most awarded restaurant.</h2>
-                        <h3>Only this month, business lunch from $25.90</h3>
+                        <h2 data-aos="fade-up"
+                            data-aos-duration="3000"
+                            data-aos-once='true'>Celebrate at one of NY’s most awarded restaurant.</h2>
+                        <h3 data-aos="fade-up"
+                            data-aos-duration="3000"
+                            data-aos-once='true'>Only this month, business lunch from $25.90</h3>
                     </span>
-                    <button>GET OFFER</button>
+                    <button data-aos="fade-up"
+                        data-aos-duration="3000"
+                        data-aos-once='true'>GET OFFER</button>
                 </div>
             </div>
         </div>

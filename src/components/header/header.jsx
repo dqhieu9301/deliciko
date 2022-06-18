@@ -8,7 +8,7 @@ const Header = () => {
     const [state, setState] = useState(false)
     const [stateCart, setStateCart] = useState(false)
     const data = useSelector(state => state.dish)
-
+    const [stateMenuMobile, setStateMenuMobile] = useState(false)
     useEffect(() => {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 400) {
@@ -58,6 +58,16 @@ const Header = () => {
                             <li><a href='/login'>LOGIN</a></li>
                         </ul>
                     </div>
+                    <div className='menu-mobile' onClick={() => setStateMenuMobile(!stateMenuMobile)}><i class="fa-solid fa-bars"></i></div>
+                </div>
+                <div className='nav-bar-mobile' style={{ transform: stateMenuMobile ? 'translateX(0)' : 'translateX(-100%)' }}>
+                    <ul>
+                        <li><a href='/home'>HOME</a> <i class="fa-solid fa-chevron-down"></i></li>
+                        <li><a href='/reservation'>RESERVATION</a> <i class="fa-solid fa-chevron-down"></i></li>
+                        <li><a href='/about'>ABOUT</a> <i class="fa-solid fa-chevron-down"></i></li>
+                        <li><a href='/order'>ORDER ONLINE</a> <i class="fa-solid fa-chevron-down"></i></li>
+                        <li><a href='/login'>LOGIN</a> <i class="fa-solid fa-chevron-down"></i></li>
+                    </ul>
                 </div>
             </div>
             <div className='cart-logo' onClick={() => setStateCart(!stateCart)}>

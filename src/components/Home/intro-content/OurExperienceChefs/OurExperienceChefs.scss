@@ -100,3 +100,24 @@
         right: 0;
     }
 }
+
+@media (max-width:740px) {
+    .our-experience-chefs {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .image-chef-container {
+            max-width: none;
+            display: inherit;
+            .image-chef-item {
+                width: 90%;
+                margin: 0 auto;
+                overflow: hidden;
+                position: relative;
+                img {
+                    width: 100%;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+    }
+}

@@ -33,6 +33,12 @@
                 }
             }
         }
+        .menu-mobile {
+            display: none;
+        }
+    }
+    .nav-bar-mobile {
+        display: none;
     }
 }
 
@@ -138,6 +144,105 @@
             font-size: 18px;
             color: #000;
             font-weight: 700;
+        }
+    }
+}
+
+@media (max-width:740px) {
+    .header {
+        position: relative;
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            .container-logo {
+                margin-left: 15px;
+                border: 1px solid rgb(248, 245, 245);
+                img {
+                    width: 80px;
+                    height: 75px;
+                }
+            }
+    
+            .nav-bar {
+                display: none;
+                ul {
+                    list-style: none;
+                    li {
+                        display: inherit;
+                        padding: 0px 30px;
+                        a {
+                            font-family: sans-serif;
+                            line-height: 95px;
+                            color: #2c2c2c;
+                            font-weight: 700;
+                            font-size: 15px;
+                        }
+    
+                        a:hover {
+                            color: #bc906b;
+                        }
+                    }
+                }
+            }
+            .menu-mobile {
+                display: inherit;
+                width: 60px;
+                height: 40px;
+                background-color: #bc906b;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 25px;
+                color: #fff;
+                border-radius: 5px;
+                margin-right: 15px;
+            }
+            .menu-mobile:hover {
+                cursor: pointer;
+            }
+        }
+        .nav-bar-mobile {
+            display: inherit;
+            position: absolute;
+            z-index: 1;
+            bottom: -188px;
+            background-color: #000;
+            width: 100%;
+            transition: all 0.5s ease;
+            ul {
+                list-style: none;
+                li {
+                    margin: 0 auto;
+                    display: block;
+                    width: 90%;
+                    padding: 10px 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    a {
+                        font-family: sans-serif;
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 15px;
+                    }
+                    a:hover {
+                        color: #bc906b;
+                    }
+                    i {
+                        color: #fff;
+                        font-size: 15px;
+                    }
+                }
+
+                li:hover i{
+                    color: #bc906b;
+                }
+                li:hover a{
+                    color: #bc906b;
+                }
+            }
         }
     }
 }
