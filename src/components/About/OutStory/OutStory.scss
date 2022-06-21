@@ -152,3 +152,302 @@
         }
     }
 }
+@media (max-width:1024px) {
+    .ourstory {
+        margin-top: 60px;
+        position: relative;
+        #story_object02 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        #story_object01 {
+            position: absolute;
+            left: 0;
+            bottom: 50vh;
+        }
+        .ourstory-container {
+        display: inherit;
+        justify-content: space-between;
+        max-width: none;
+        margin: 0 auto;
+            .ourstory-intro {
+                width: 90%;
+                margin: 50px auto;
+                text-align: center;
+                h2 {
+                    font-family: 'Cookie', cursive;
+                    font-size: 50px;
+                    font-weight: 500;
+                }
+                h3 {
+                    display: inline;
+                    color: #bc906b;
+                    font-size: 50px;
+                    font-weight: 500;
+                }
+                p {
+                    font-family: 'ZCOOL XiaoWei', serif;
+                    font-size: 18px;
+                    margin-top: 30px;
+                    color: #666666;
+                    line-height: 25px;
+                }
+                h4 {
+                    margin-top: 20px;
+                    font-size: 18px;
+                }
+                h5 {
+                    font-size: 16px;
+                    margin-top: 4px;
+                    margin-bottom: 10px;
+                    color: #666666;
+                }
+                .signature {
+                    width: 95px;
+                    height: 75px;
+                    overflow: hidden;
+                    margin: 0 auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    img:hover {
+                        transition: all 0.5s ease;
+                        transform: scale(1.1);
+                    }
+                }
+                .number {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 60px;
+                    span {
+                        h2 {
+                            font-size: 40px;
+                            color: #666666;
+                        }
+                        h3 {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+           .imageWrapper {
+               width: 70%;
+               margin: 0 auto;
+               overflow: hidden;
+               position: relative;
+               transition: all 2s ease;
+                img {
+                    width: 100%;
+                    height: 60vw;
+                    transition: all 0.5s ease;
+                }
+    
+                img:hover {
+                    transform: scale(1.1);
+                }
+           }
+    
+           .imageWrapper::before {
+               content: '';
+               position: absolute;
+               width: 30%;
+               height: 100%;
+               top: 0px;
+               left: -50%;
+               z-index: 100;
+               background-color: rgba(white , 0.7);
+           }
+    
+           .imageWrapper:hover::before{
+                transition: all 1.2s ease;
+                left: 150%;
+           }
+        }
+        .parameter {
+            margin-top: 50px;
+            background-image: url('../../../img/cta_image-min.jpg');
+            height: 50vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #000;
+                opacity: 0.3;
+            }
+            .parameter-intro {
+                position: absolute;
+                display: flex;
+                max-width: 700px;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 1;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                left: 0;
+                right: 0;
+                span {
+                    text-align: center;
+                    h2 {
+                        color: #666666;
+                        font-size: 57px;
+                        font-family: 'ZCOOL XiaoWei', serif;
+                    }
+                    h3 {
+                        color: #fff;
+                        font-size: 25px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:740px) {
+    .ourstory {
+        .ourstory-container {
+        display: inherit;
+        margin: 0 auto;
+            .ourstory-intro {
+                margin: 0 auto;
+                width: 90%;
+                text-align: center;
+                h2 {
+                    font-family: 'Cookie', cursive;
+                    font-size: 35px;
+                    font-weight: 500;
+                }
+                h3 {
+                    display: inline;
+                    color: #bc906b;
+                    font-size: 35px;
+                    font-weight: 500;
+                }
+                p {
+                    font-family: 'ZCOOL XiaoWei', serif;
+                    font-size: 18px;
+                    margin-top: 10px;
+                    color: #666666;
+                    line-height: 25px;
+                }
+                h4 {
+                    margin-top: 20px;
+                    font-size: 18px;
+                }
+                h5 {
+                    font-size: 16px;
+                    margin-top: 4px;
+                    margin-bottom: 10px;
+                    color: #666666;
+                }
+                .signature {
+                    width: 95px;
+                    height: 75px;
+                    overflow: hidden;
+                    margin: 0 auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    img:hover {
+                        transition: all 0.5s ease;
+                        transform: scale(1.1);
+                    }
+                }
+                .number {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 60px;
+                    span {
+                        h2 {
+                            font-size: 40px;
+                            color: #666666;
+                        }
+                        h3 {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+           .imageWrapper {
+            margin: 0 auto;
+               width: 90%;
+               overflow: hidden;
+               position: relative;
+               transition: all 2s ease;
+                img {
+                    width: 100%;
+                    height: 60vh;
+                    transition: all 0.5s ease;
+                }
+    
+                img:hover {
+                    transform: scale(1.1);
+                }
+           }
+    
+           .imageWrapper::before {
+               content: '';
+               position: absolute;
+               width: 30%;
+               height: 100%;
+               top: 0px;
+               left: -50%;
+               z-index: 100;
+               background-color: rgba(white , 0.7);
+           }
+    
+           .imageWrapper:hover::before{
+                transition: all 1.2s ease;
+                left: 150%;
+           }
+        }
+        .parameter {
+            margin-top: 50px;
+            background-image: url('../../../img/cta_image-min.jpg');
+            height: 500px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #000;
+                opacity: 0.3;
+            }
+            .parameter-intro {
+                position: absolute;
+                display: inherit;
+                width: 100%;
+                span {
+                    display: block;
+                    h2 {
+                        color: #666666;
+                        font-size: 40px;
+                        font-family: 'ZCOOL XiaoWei', serif;
+                    }
+                    h3 {
+                        display: block;
+                        margin-top: 5px;
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

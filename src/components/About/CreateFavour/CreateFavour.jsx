@@ -9,17 +9,24 @@ import { Slide } from "react-slideshow-image";
 const CreateFavour = () => {
     const properties = {
         duration: 3000,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        // slidesToShow: 4,
+        // slidesToScroll: 4,
         autoplay: true,
         indicators: true,
+        responsive: [
+            // { breakpoint: 740, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+            // { breakpoint: 0, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+            // { breakpoint: 1024, settings: { slidesToShow: 4, slidesToScroll: 4 } },
+            { breakpoint: 740, settings: { slidesToShow: 4, slidesToScroll: 4 } },
+
+        ],
     };
     return (
         <>
             <div className="create-favour" data-aos="fade-up"
                 data-aos-duration="3000"
                 data-aos-once='true'>
-                <div className="create-favour-image"></div>
+                <div className="create-favour-image-background"></div>
                 <div className="create-favour-main">
                     <div className="create-favour-container">
                         <div className="create-favour-intro">

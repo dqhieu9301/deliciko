@@ -37,3 +37,45 @@
         transition: all 0.5s ease;
     }
 }
+
+@media (max-width:740px) {
+    .product-item {
+        position: relative;
+        margin-top: 15px;
+        padding: 15px 10px;
+        background-color: #F9F9F9;
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 30%;
+            height: 30%;
+        }
+        .item-intro {
+            margin-left: 10px;
+            h4 {
+                color: #c70e40;
+                font-size: 18px;
+                font-family: 'ZCOOL XiaoWei', serif;
+            }
+            h5 {
+                color: #666666;
+                font-size: 13px;
+            }
+        }
+        button {
+            float: right;
+            background-color: #c70e40;
+            color: #c70e40;
+            border: none;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: #5D78FF;
+            color: #fff;
+            transition: all 0.5s ease;
+        }
+    }
+}

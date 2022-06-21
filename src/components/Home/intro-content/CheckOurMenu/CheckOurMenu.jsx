@@ -4,38 +4,22 @@ import image01 from '../../../../img/image01.jpg'
 import image02 from '../../../../img/image02.jpg'
 import image03 from '../../../../img/image03.jpg'
 import image04 from '../../../../img/image04.jpg'
-import Slider from 'react-slick'
+import { Slide } from 'react-slideshow-image'
+import 'react-slideshow-image/dist/styles.css'
 const CheckOurMenu = () => {
-    const [state, setState] = useState(0)
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
+    const properties = {
+        duration: 3000,
         slidesToShow: 1,
-        slidesToScroll: 1
-    };
-    const handleOnclick_Left = () => {
-        const items = document.querySelectorAll('.check-our-menu-slider-item')
-        const slider = document.querySelector('.check-our-menu-slider-main')
-        const itemSize = items[0].offsetWidth
-        if (state >= 0) {
-            slider.style = `transform: translateX(${(-itemSize - 30) * (state)}px)`
-            setState(state - 1)
-        }
-        else {
-            setState(0)
-        }
-    }
-
-    const handleOnclick_Right = () => {
-        const items = document.querySelectorAll('.check-our-menu-slider-item')
-        const slider = document.querySelector('.check-our-menu-slider-main')
-        const itemSize = items[0].offsetWidth
-        const numberClick = items.length - 3
-        slider.style = `transform: translateX(${(-itemSize - 30) * (state + 1)}px)`
-        if (state < numberClick - 1) {
-            setState(state + 1)
-        }
+        slidesToScroll: 1,
+        autoplay: true,
+        indicators: true,
+        responsive: [
+            // { breakpoint: 740, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+            // { breakpoint: 0, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+            { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1 } },
+            { breakpoint: 740, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+            { breakpoint: 0, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+        ],
     }
     return (
         <div className="check-our-menu" data-aos="zoom-in-up" data-aos-once='true' data-aos-duration="3000">
@@ -66,58 +50,49 @@ const CheckOurMenu = () => {
                 </div>
                 <div className="seperate"></div>
                 <div className="check-our-menu-slider">
-                    <i class="fa-solid fa-angle-left" onClick={handleOnclick_Left}></i>
-                    <div className="check-our-menu-slider-container">
-                        <div className="check-our-menu-slider-main">
-                            <div className="check-our-menu-slider-item">
-                                <div className="container-img">
-                                    <img src={image01}></img>
-                                </div>
-                                <div className="cost">$ 42</div>
-                                <h3>Flatbread Tuscan</h3>
-                                <p>Pork, chicken and vegetable fried rolls served with lettuce wraps</p>
-                                <button>ORDER NOW</button>
+                    <Slide {...properties}>
+                        <div className="check-our-menu-slider-item">
+                            <div className="container-img">
+                                <img src={image01}></img>
                             </div>
-                            <div className="check-our-menu-slider-item">
-                                <div className="container-img">
-                                    <img src={image02}></img>
-                                </div>
-                                <div className="cost">$ 42</div>
-                                <h3>Flatbread Tuscan</h3>
-                                <p>Pork, chicken and vegetable fried rolls served with lettuce wraps</p>
-                                <button>ORDER NOW</button>
-                            </div>
-                            <div className="check-our-menu-slider-item">
-                                <div className="container-img">
-                                    <img src={image03}>
-                                    </img>
-                                </div>
-                                <div className="cost">$ 42</div>
-                                <h3>Flatbread Tuscan</h3>
-                                <p>Pork, chicken and vegetable fried rolls served with lettuce wraps</p>
-                                <button>ORDER NOW</button>
-                            </div>
-                            <div className="check-our-menu-slider-item">
-                                <div className="container-img">
-                                    <img src={image04}></img>
-                                </div>
-                                <div className="cost">$ 42</div>
-                                <h3>Flatbread Tuscan</h3>
-                                <p>Pork, chicken and vegetable fried rolls served with lettuce wraps</p>
-                                <button>ORDER NOW</button>
-                            </div>
-                            <div className="check-our-menu-slider-item">
-                                <div className="container-img">
-                                    <img src={image01}></img>
-                                </div>
-                                <div className="cost">$ 42</div>
-                                <h3>Flatbread Tuscan</h3>
-                                <p>Pork, chicken and vegetable fried rolls served with lettuce wraps</p>
-                                <button>ORDER NOW</button>
-                            </div>
+                            <h3>Flatbread Tuscan</h3>
+                            <p>Pork, chicken and vegetable fried rolls served with lettuce wraps</p>
+                            <button>ORDER NOW</button>
                         </div>
-                    </div>
-                    <i class="fa-solid fa-angle-right" onClick={handleOnclick_Right}></i>
+                        <div className="check-our-menu-slider-item">
+                            <div className="container-img">
+                                <img src={image02}></img>
+                            </div>
+                            <h3>Flatbread Tuscan</h3>
+                            <p>Pork, chicken and vegetable fried rolls served with lettuce wraps</p>
+                            <button>ORDER NOW</button>
+                        </div>
+                        <div className="check-our-menu-slider-item">
+                            <div className="container-img">
+                                <img src={image03}>
+                                </img>
+                            </div>
+                            <h3>Flatbread Tuscan</h3>
+                            <p>Pork, chicken and vegetable fried rolls served with lettuce wraps</p>
+                            <button>ORDER NOW</button>
+                        </div>
+                        <div className="check-our-menu-slider-item">
+                            <div className="container-img">
+                                <img src={image04}></img>
+                            </div>
+                            <h3>Flatbread Tuscan</h3>
+                            <p>Pork, chicken and vegetable fried rolls served with lettuce wraps</p>
+                            <button>ORDER NOW</button>
+                        </div>
+                        <div className="check-our-menu-slider-item">
+                            <div className="container-img">
+                                <img src={image01}></img>
+                            </div>
+                            <h3>Flatbread Tuscan</h3>
+                            <p>Pork, chicken and vegetable fried rolls served with lettuce wraps</p>
+                            <button>ORDER NOW</button>
+                        </div>
+                    </Slide>
                 </div>
             </div>
         </div>

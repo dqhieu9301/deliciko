@@ -39,20 +39,18 @@ h3 {
                 width: 45%;
                 text-align: center;
                 h2 {
-                    font-family: 'Cookie', cursive;
                     font-size: 50px;
-                    font-weight: 500;
-                    color: #000;
+                   
                 }
                 h3 {
-                    display: inline;
-                    color: #000;
                     font-size: 50px;
-                    font-weight: 500;
+                }
+                .pattern {
+                    display: none;
                 }
                 p {
                     margin: 0 auto;
-                    width: 85%;
+                    width: 90%;
                     font-family: sans-serif;
                     font-size: 18px;
                     margin-top: 30px;
@@ -137,6 +135,219 @@ h3 {
                 transform: scale(1.1);
             }
             
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    h2 {
+        font-family: 'Cookie', cursive;
+        font-size: 50px;
+        font-weight: 500;
+        text-align: center;
+    }
+    h3 {
+        display: inline;
+        color: #bc906b;
+        font-size: 50px;
+        font-weight: 500;
+        text-align: center;
+    
+    }
+    .pattern {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .dinning-events {
+        width: 100%;
+        height: auto;
+        position: relative;
+        .dinning-events-main {
+            position:relative; 
+            .dinning-events-container {
+                margin: 0 auto;
+                max-width: none;
+                height: 100%;
+                display: inherit;
+                justify-content: space-between;
+                align-items: center;
+                .dinning-events-intro {
+                    width: 90%;
+                    margin: 0 auto;
+                    text-align: center;
+                    h2 {
+                        font-size: 50px;
+                       
+                    }
+                    h3 {
+                        font-size: 50px;
+                    }
+                    p {
+                        margin: 0 auto;
+                        width: 90%;
+                        font-family: sans-serif;
+                        font-size: 17px;
+                        margin-top: 30px;
+                        color: #666666;
+                        line-height: 25px;
+                    }
+                    button {
+                        position: relative;
+                        width: 150px;
+                        height: 40px;
+                        font-size: 14px;
+                        font-weight: 700;
+                        background-color: #bc906b;
+                        color: #fff;
+                        font-family: sans-serif;
+                        line-height: 40px;
+                        margin: 0 auto;
+                        margin-top: 40px;
+                        transition: all 0.5s ease;
+                        border: none;
+                    }
+                    button::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 5px;
+                        background-color: #bc906b;
+                        opacity: 0.4;
+                        bottom: -5px;
+                        left: 5px;
+                        transition: all 0.5s ease;
+                    }
+                    button::after {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 100%;
+                        background-color: #bc906b;
+                        opacity: 0.4;
+                        top: 2px;
+                        right: -5px;
+                        transition: all 0.5s ease;
+                    }
+                    button:hover {
+                        cursor: pointer;
+                        background-color: #bc8151;
+                    }
+                    button:hover::after {
+                        display: none;
+                    }
+                    button:hover::before {
+                        display: none;
+                    }
+                }
+                .dinning-events-image {
+                    width: 90%;
+                    height: 100%;
+                    margin: 30px auto;
+                    overflow: hidden;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        transition: all 1s ease;
+                    }
+                }
+                .dinning-events-image::before {
+                    content: '';
+                    position: absolute;
+                    width: 30%;
+                    height: 100%;
+                    top: 0px;
+                    left: -50%;
+                    z-index: 100;
+                    background-color: rgba(white , 0.7);
+                    }
+            
+                .dinning-events-image:hover::before{
+                    transition: all 1s ease;
+                    left: 100%;
+                }
+                .dinning-events-image:hover img {
+                    transform: scale(1.1);
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width:740px) {
+    h2 {
+        font-size: 35px;
+        margin-top: 50px;  
+    }
+    h3 {
+        font-size: 35px;
+    }
+    .dinning-events {
+        width: 100%;
+        height: auto;
+        .dinning-events-main {
+            position:inherit; 
+            .dinning-events-container {
+                max-width: none;
+                height: auto;
+                display: inherit;
+                .dinning-events-intro {
+                    width: 90%;
+                    text-align: center;
+                    margin: 0 auto;
+                    h2 {
+                        font-family: 'Cookie', cursive;
+                        font-size: 35px;
+                        font-weight: 500;
+                        color: #000;
+                    }
+                    h3 {
+                        font-size: 35px;
+                    }
+                    .pattern {
+                        display: none;
+                    }
+                    p {
+                        font-size: 17px;
+                    }
+                    button {
+                        font-size: 12px;
+                    }
+                }
+                .dinning-events-image {
+                    width: 90%;
+                    height: 100vw;
+                    overflow: hidden;
+                    position: relative;
+                    margin: 50px auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        transition: all 1s ease;
+                    }
+                }
+                .dinning-events-image::before {
+                    content: '';
+                    position: absolute;
+                    width: 30%;
+                    height: 100%;
+                    top: 0px;
+                    left: -50%;
+                    z-index: 100;
+                    background-color: rgba(white , 0.7);
+                    }
+            
+                .dinning-events-image:hover::before{
+                    transition: all 1s ease;
+                    left: 100%;
+                }
+                .dinning-events-image:hover img {
+                    transform: scale(1.1);
+                }
+                
+            }
         }
     }
 }

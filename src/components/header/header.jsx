@@ -60,7 +60,7 @@ const Header = () => {
                     </div>
                     <div className='menu-mobile' onClick={() => setStateMenuMobile(!stateMenuMobile)}><i class="fa-solid fa-bars"></i></div>
                 </div>
-                <div className='nav-bar-mobile' style={{ transform: stateMenuMobile ? 'translateX(0)' : 'translateX(-100%)' }}>
+                <div className='nav-bar-mobile' style={{ transform: stateMenuMobile ? 'translateX(0)' : 'translateX(-200%)' }}>
                     <ul>
                         <li><a href='/home'>HOME</a> <i class="fa-solid fa-chevron-down"></i></li>
                         <li><a href='/reservation'>RESERVATION</a> <i class="fa-solid fa-chevron-down"></i></li>

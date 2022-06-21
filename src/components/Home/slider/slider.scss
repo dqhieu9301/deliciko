@@ -1,4 +1,5 @@
 .slider {
+    position: relative;
     .slider-main {
         width: 100%;
         button {
@@ -38,7 +39,7 @@
                 top:50%; 
                 left:50%; 
                 transform:translate(-50%, -50%); 
-                width:70%;
+                width:90%;
                 text-align: center;
                 color: #fff;
                 h1,
@@ -141,7 +142,7 @@
         margin-right: auto;
         left: 0;
         right: 0;
-        bottom: -320px;
+        bottom: -220px;
         .intro-tiem {
             width: 30%;
             padding: 50px 0px;
@@ -193,6 +194,190 @@
     }
 }
 
+@media (max-width:1024px) {
+    .slider {
+        .slider-main {
+            width: 100%;
+            button {
+                display: none;
+            } 
+            #item-one {
+                background-image: url('../../../img/slider_image01-1.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                padding-top: 80%;
+                flex: 1 0 100%;
+            }
+            #item-two {
+                background-image: url('../../../img/slider_image02-1.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                padding-top: 80%;
+                flex: 1 0 100%;
+            }
+            #item-three {
+                background-image: url('../../../img/slider_image03.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                padding-top: 80%;
+                flex: 1 0 100%;
+            }
+    
+            .slider-item {
+                position: relative;
+                .item-content {
+                    position: absolute;
+                    z-index: 1;
+                    position:absolute; 
+                    top:50%; 
+                    left:50%; 
+                    transform:translate(-50%, -50%); 
+                    width:90%;
+                    text-align: center;
+                    color: #fff;
+                    h1,
+                    h2 {
+                        font-family: 'ZCOOL XiaoWei', serif;
+                        color: #bc906b;
+                    }
+                    h2 {
+                        font-size: 40px;
+                        font-weight: 500;
+                    }
+                    h1 {
+                        font-size: 110px;
+                        font-weight: 500;
+                        margin-bottom: 30px;
+                    }
+                    span {
+                        position: relative;
+                        p {
+                            font-size: 16px;
+                            letter-spacing: 3px;
+                        }
+                    }
+    
+                    span::before {
+                        display: none;
+                    }
+    
+                    span::after {
+                        display: none;
+                    }
+    
+                    .view-menu {
+                        position: relative;
+                        width: 150px;
+                        height: 40px;
+                        font-size: 15px;
+                        font-weight: 700;
+                        background-color: #bc906b;
+                        color: #fff;
+                        font-family: sans-serif;
+                        line-height: 40px;
+                        margin: 0 auto;
+                        margin-top: 40px;
+                        transition: all 0.5s ease;
+                    }
+                    .view-menu::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 5px;
+                        background-color: #bc906b;
+                        opacity: 0.4;
+                        bottom: -5px;
+                        left: 5px;
+                    }
+                    .view-menu::after {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 100%;
+                        background-color: #bc906b;
+                        opacity: 0.4;
+                        top: 2px;
+                        right: -5px;
+                    }
+                    .view-menu:hover {
+                        cursor: pointer;
+                        background-color: #000;
+                    }
+                    .view-menu:hover.view-menu::after {
+                        display: none;
+                    }
+                    .view-menu:hover.view-menu::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    
+        .intro-cotnent {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px;
+            position: absolute;
+            z-index: 1;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            .intro-tiem {
+                width: 32%;
+                padding: 50px 0px;
+                background-color: #fff;
+                text-align: center;
+                border: 0.1px solid rgb(250, 228, 228);
+                box-shadow: #000;
+                img {
+                    display: block;
+                    width: 40%;
+                    margin: 0 auto;
+                    transition: all 0.5s ease;
+                }
+                h3 {
+                    font-family: 'ZCOOL XiaoWei', serif;
+                    font-size: 20px;
+                    font-weight: 500;
+                    display: inline-block;
+                    color: #9a9696;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    h4 {
+                        font-family: 'ZCOOL XiaoWei', serif;
+                        display: inline-block;
+                        color: #bc906b;
+                        font-weight: 500;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    font-family: 'ZCOOL XiaoWei', serif;
+                    color: #9a9696;
+                    width: 80%;
+                    margin: 0 auto;
+                    line-height: 20px;
+                }
+            }
+            @keyframes up_down {
+                0%   {transform: translateY(0px);}
+                25%  {transform: translateY(-20px);}
+                50%  {transform: translateY(-30px);}
+                75%  {transform: translateY(-20px);}
+                100% {transform: translateY(0px);}
+            }
+            .intro-tiem:hover img {
+                cursor: pointer;
+                animation: up_down 1s ease;
+            }
+        }
+    }
+}
+
 @media (max-width:740px) {
     .slider {
         .slider-main { 
@@ -215,7 +400,7 @@
                         font-size: 26px;
                     }
                     h1 {
-                        font-size: 40px;
+                        font-size: 43px;
                     }
                     span {
                         p {
@@ -238,7 +423,9 @@
         }
         .intro-cotnent {
             display: inherit;
-            position: inherit;
+            position: relative;
+            max-width: none;
+            bottom: 0;
             .intro-tiem {
                 width: 80%;
                 margin: 0 auto;

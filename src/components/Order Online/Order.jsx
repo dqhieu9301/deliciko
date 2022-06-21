@@ -48,11 +48,14 @@ const Order = () => {
         toast.success("Sucscess")
     }
     return (
-        <div className="order" id="load-dish">
-            <div className="order-slide">
+        <div className="order" id="load-dish" >
+            <div className="order-slide" data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-once='true'>
                 <h1>Product Details</h1>
             </div>
-            <div className="signature-dish">
+            <div className="signature-dish" data-aos="fade-up"
+                data-aos-duration="3000">
                 <div className="signature-dish-container">
                     <div className="signature-dish-image">
                         <img src={product[state].pathMain}></img>
