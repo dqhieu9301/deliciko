@@ -16,16 +16,16 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
-    <HashRouter basename='/deliciko'>
+    <HashRouter>
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/deliciko" element={<Home />} />
-          <Route path="/deliciko/login" element={<Login />} />
-          <Route path="/deliciko/home" element={<Home />} />
-          <Route path="/deliciko/order" element={<Order />} />
-          <Route path="/deliciko/about" element={<About />} />
-          <Route path="/deliciko/reservation" element={<Reservation />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/order" element={<Order />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/reservation" element={<Reservation />} />
         </Routes>
         <Footer />
       </div>
@@ -41,6 +41,7 @@ function App() {
         pauseOnHover
       />
     </HashRouter>
+
   );
 }
 

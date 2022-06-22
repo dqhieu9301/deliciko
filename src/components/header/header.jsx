@@ -51,22 +51,22 @@ const Header = () => {
                     <a href='' className='container-logo'><img src={logo}></img></a>
                     <div className='nav-bar'>
                         <ul>
-                            <li><a href='/home'>HOME</a></li>
-                            <li><a href='/reservation'>RESERVATION</a></li>
-                            <li><a href='/about'>ABOUT</a></li>
-                            <li><a href='/order'>ORDER ONLINE</a></li>
-                            <li><a href='/login'>LOGIN</a></li>
+                            <li><a href='#/home'>HOME</a></li>
+                            <li><a href='#/reservation'>RESERVATION</a></li>
+                            <li><a href='#/about'>ABOUT</a></li>
+                            <li><a href='#/order'>ORDER ONLINE</a></li>
+                            <li><a href='#/login'>LOGIN</a></li>
                         </ul>
                     </div>
                     <div className='menu-mobile' onClick={() => setStateMenuMobile(!stateMenuMobile)}><i class="fa-solid fa-bars"></i></div>
                 </div>
                 <div className='nav-bar-mobile' style={{ transform: stateMenuMobile ? 'translateX(0)' : 'translateX(-200%)' }}>
                     <ul>
-                        <li><a href='/home'>HOME</a> <i class="fa-solid fa-chevron-down"></i></li>
-                        <li><a href='/reservation'>RESERVATION</a> <i class="fa-solid fa-chevron-down"></i></li>
-                        <li><a href='/about'>ABOUT</a> <i class="fa-solid fa-chevron-down"></i></li>
-                        <li><a href='/order'>ORDER ONLINE</a> <i class="fa-solid fa-chevron-down"></i></li>
-                        <li><a href='/login'>LOGIN</a> <i class="fa-solid fa-chevron-down"></i></li>
+                        <li><a href='#/home'>HOME</a> <i class="fa-solid fa-chevron-down"></i></li>
+                        <li><a href='#/reservation'>RESERVATION</a> <i class="fa-solid fa-chevron-down"></i></li>
+                        <li><a href='#/about'>ABOUT</a> <i class="fa-solid fa-chevron-down"></i></li>
+                        <li><a href='#/order'>ORDER ONLINE</a> <i class="fa-solid fa-chevron-down"></i></li>
+                        <li><a href='#/login'>LOGIN</a> <i class="fa-solid fa-chevron-down"></i></li>
                     </ul>
                 </div>
             </div>

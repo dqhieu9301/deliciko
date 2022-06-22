@@ -14,7 +14,7 @@ const Login = () => {
                         <input type='password' placeholder="Password"></input>
                     </div>
                     <div className="summit">
-                        <button><a href="/home">SIGN IN</a></button>
+                        <button><a href="#/home">SIGN IN</a></button>
                     </div>
                     <span>Not a member?<a href="">Sign up now <i class="fa-solid fa-arrow-right"></i></a></span>
                 </form>
