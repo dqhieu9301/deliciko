@@ -44,6 +44,9 @@ const Header = () => {
         for (let i = 0; i < data.list.length; i++) results += data.list[i].cost * data.list[i].amount
         return results
     }
+    const ScrollTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
     return (
         <>
             <div className='header' id='header-up'>
@@ -75,7 +78,7 @@ const Header = () => {
                 <div className='amout-products'>{data.list.length}</div>
             </div>
             <div className='scroll-up' style={{ display: state ? '' : 'none' }}>
-                <a href='#header-up'><i class="fa-solid fa-angle-up"></i></a>
+                <a onClick={ScrollTop}><i class="fa-solid fa-angle-up"></i></a>
             </div>
             <div className='cart' style={{ transform: stateCart ? 'translateX(0)' : 'translateX(100%)' }}>
                 <i class="fa-solid fa-xmark" onClick={() => setStateCart(!stateCart)}></i>

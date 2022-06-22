@@ -41,7 +41,6 @@ function App() {
         pauseOnHover
       />
     </HashRouter>
-
   );
 }
 

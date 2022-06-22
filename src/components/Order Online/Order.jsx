@@ -47,6 +47,16 @@ const Order = () => {
         dispatch(action)
         toast.success("Sucscess")
     }
+    const ScrollTop = () => {
+        window.scrollTo({ top: 0 });
+    }
+    const SetState = (item) => {
+        setState(item.id - 1)
+    }
+    const handleOnclickItem = (item) => {
+        ScrollTop()
+        SetState(item)
+    }
     return (
         <div className="order" id="load-dish" >
             <div className="order-slide" data-aos="fade-up"
@@ -113,7 +123,7 @@ const Order = () => {
                         if (state < 4) {
                             if (item.id - 1 >= 4) {
                                 return (
-                                    <a onClick={() => setState(item.id - 1)} href='#load-dish'>
+                                    <a onClick={() => handleOnclickItem(item)}>
                                         <div key={item.id} className='food-product-item'>
                                             <div className="food-item-image">
                                                 <img src={item.pathExtra}></img>
@@ -131,7 +141,7 @@ const Order = () => {
                         else {
                             if (item.id - 1 < 4) {
                                 return (
-                                    <a onClick={() => { setState(item.id - 1) }} href='#load-dish'>
+                                    <a onClick={() => handleOnclickItem(item)}>
                                         <div key={item.id} className='food-product-item' >
                                             <div className="food-item-image">
                                                 <img src={item.pathExtra}></img>
