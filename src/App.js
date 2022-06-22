@@ -16,7 +16,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
-    <BrowserRouter basename='/deliciko'>
+    <HashRouter basename='/deliciko'>
       <div className="App">
         <Header />
         <Routes>
@@ -40,7 +40,7 @@ function App() {
         draggable
         pauseOnHover
       />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
